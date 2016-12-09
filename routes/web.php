@@ -20,7 +20,7 @@ Route::group(['prefix' => 'admin','as'=>'admin.'], function () {
 //    Route::get('/', ['uses'=>'Admin\IndexController@index','as'=>'/']);
 //    Route::get('index', ['uses'=>'Admin\IndexController@index','as'=>'index']);
     Route::get('login', ['uses'=>'Admin\LoginController@showLogin','as'=>'login']);
-//    Route::post('login', ['uses'=>'Admin\LoginController@login','as'=>'postLogin']);
+    Route::post('login', ['uses'=>'Admin\LoginController@login','as'=>'postLogin']);
 //    Route::get('logout', ['uses'=>'Admin\LoginController@logout','as'=>'logout']);
 //
 //    Route::get('good/index', ['uses'=>'Admin\GoodController@index','as'=>'good.index']);
